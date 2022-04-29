@@ -1,0 +1,434 @@
+/* --- GENERAL --- */
+@import url("https://use.typekit.net/aom8far.css");
+body {
+  font-family: museo-sans, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  /* --- HEADER --- */
+.kyruus-custom-wrapper header {
+  border-bottom: 1px solid #f5f5f5;
+  box-shadow: 0 0 10px -10px #000;
+}
+.kyruus-custom-wrapper .pr-logo {
+  padding: 10px 20px 5px 0;
+}
+.kyruus-custom-wrapper .align-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.kyruus-custom-wrapper .space-btwn {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+  /* Header - Top Navigation */
+.kyruus-custom-wrapper .pr-topnav {
+  width: 100%;
+  background: -webkit-linear-gradient(left, #ffd301 0%, #f4702a 21%, #ee254a 40%, #ed2870 60%, #c52378 80%, #861766 100%);
+  background: linear-gradient(90deg, #ffd301 0%, #f4702a 21%, #ee254a 40%, #ed2870 60%, #c52378 80%, #861766 100%);
+  font-family: museo-sans, sans-serif;
+}
+.kyruus-custom-wrapper .pr-topnav ul {
+  float: right;
+}
+.kyruus-custom-wrapper .pr-topnav ul > li {
+  float: left;
+  list-style-type: none;
+  display: inline-block;
+}
+.kyruus-custom-wrapper .pr-topnav ul > li a {
+  padding: 18px 16px 18px 0;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+}
+.kyruus-custom-wrapper .pr-topnav ul > li a:hover {
+  text-decoration: underline;
+}
+
+  /* Header - Main Navigation */
+.kyruus-custom-wrapper .pr-mainnav .pr-nav {
+  float: left;
+  list-style-type: none;
+  color: #333;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1.7;
+  font-size: 16px;
+  font-family: museo-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.kyruus-custom-wrapper .pr-nav > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.kyruus-custom-wrapper .pr-nav > li > a {
+  padding: 14px 18px 14px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.kyruus-custom-wrapper .pr-nav a {
+  transition: background 300ms, color 300ms, border-color 300ms;
+  -moz-transition: background 300ms, color 300ms, border-color 300ms;
+  -o-transition: background 300ms, color 300ms, border-color 300ms;
+  -webkit-transition: background 300ms, color 300ms, border-color 300ms;
+  text-decoration: none;
+  font-size: 16px;
+}
+.kyruus-custom-wrapper .pr-nav a:hover {
+  color: #ed1849;
+}
+.kyruus-custom-wrapper li.has-children {
+  position: relative;
+}
+.kyruus-custom-wrapper li.has-children > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  list-style: none;
+  z-index: 99;
+  min-width: 220px;
+  margin-top: -10px;
+  margin-left: -2px;
+  font-size: 14px;
+}
+.kyruus-custom-wrapper li.has-children:hover > ul {
+  display: block;
+}
+.kyruus-custom-wrapper li.has-children > ul > li {
+  padding: 1px 11px;
+  background-color: #f5f5f5;
+  white-space: nowrap;
+}
+.kyruus-custom-wrapper li.has-children > ul > li:first-child {
+  padding-top: 12px;
+}
+.kyruus-custom-wrapper li.has-children > ul > li:last-child {
+  padding-bottom: 12px;
+}
+.kyruus-custom-wrapper li.has-children > ul > li a {
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  padding: 6px 30px 6px 12px;
+  position: relative;
+  color: #333;
+}
+
+  /* --- FOOTER --- */
+.kyruus-custom-wrapper .pr-footer {
+  background-color: #e1e1e2;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.kyruus-custom-wrapper .pr-footer ul {
+  list-style-type: none;
+}
+.kyruus-custom-wrapper .pr-footer li > a {
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 0;
+  position: relative;
+  color: #333;
+}
+.kyruus-custom-wrapper .pr-footer h3 {
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 2px solid #830065;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.kyruus-custom-wrapper .pr-footer li > a {
+  text-decoration: none;
+}
+.kyruus-custom-wrapper .pr-footer li > a:hover {
+  color: #830065;
+}
+.kyruus-custom-wrapper .pr-footer [class*=col-] > ul {
+  margin-bottom: 60px;
+}
+
+  /* --- FOOTER - Privacy --- */
+.kyruus-custom-wrapper .pr-privacy {
+  background: -webkit-linear-gradient(left, #ffd301 0%, #f4702a 21%, #ee254a 40%, #ed2870 60%, #c52378 80%, #861766 100%);
+  background: linear-gradient(90deg, #ffd301 0%, #f4702a 21%, #ee254a 40%, #ed2870 60%, #c52378 80%, #861766 100%);
+  padding: 33px 0;
+  line-height: 1.7;
+  color: #fff;
+}
+.kyruus-custom-wrapper .pr-privacy a {
+  color: #fff;
+  text-decoration: none;
+}
+.kyruus-custom-wrapper .pr-privacy a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+  /* --- FOOTER - Social --- */
+.kyruus-custom-wrapper .footer-social {
+  margin: 1em 0;
+  text-align: left;
+}
+.kyruus-custom-wrapper .footer-social p {
+  clear: both;
+}
+.kyruus-custom-wrapper .footer-social > a {
+  margin: 0 5px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+.kyruus-custom-wrapper .footer-social > a:first-child {
+  margin-left: 0;
+}
+.kyruus-custom-wrapper .footer-social > a:hover {
+  text-decoration: none !important;
+}
+.kyruus-custom-wrapper .footer-social .fb {
+  background: url(https://www.palmettohealth.org/EmergeWebsite/media/Emerge_EmergeWebsite/Projects/NewCo/Social%20Icons/social_facebook.svg) no-repeat 0 0 scroll transparent;
+  background-size: cover;
+}
+.kyruus-custom-wrapper .footer-social .tw {
+  background: url(https://www.palmettohealth.org/EmergeWebsite/media/Emerge_EmergeWebsite/Projects/NewCo/Social%20Icons/social_twitter.svg) no-repeat 0 0 scroll transparent;
+  background-size: cover;
+  margin: 0 2px;
+}
+.kyruus-custom-wrapper .footer-social .yt {
+  background: url(https://www.palmettohealth.org/EmergeWebsite/media/Emerge_EmergeWebsite/Projects/NewCo/Social%20Icons/social_youtube.svg) no-repeat 0 0 scroll transparent;
+  background-size: cover;
+}
+.kyruus-custom-wrapper .footer-social .in {
+  background: url(https://www.palmettohealth.org/EmergeWebsite/media/Emerge_EmergeWebsite/Projects/NewCo/Social%20Icons/Social_instagram.png) no-repeat 0px 0px/cover;
+  background-size: cover;
+}
+
+
+  /* --- Mobile Menu --- */
+.kyruus-custom-wrapper #navTrigger {
+    display: none;
+  }
+  .kyruus-custom-wrapper label.menu {
+    display: none;
+  }
+@media (max-width: 768px) {
+  .kyruus-custom-wrapper .pr-logo img {
+    padding-left: 8px;
+  }
+  .kyruus-custom-wrapper .pr-privacy {
+    padding: 10px 0;
+  }
+  .kyruus-custom-wrapper .pr-logo {
+    padding: 0;
+  }
+  .kyruus-custom-wrapper .pr-topnav {
+    display: none;
+  }
+  .kyruus-custom-wrapper .pr-mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 15px;
+  }
+  .kyruus-custom-wrapper li.has-children:hover > ul {
+    display: none;
+  }
+  .kyruus-custom-wrapper .navbar-toggle {
+    position: relative;
+    float: right;
+  }
+  .kyruus-custom-wrapper .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(#ffd301), color-stop(21%, #f4702a), color-stop(40%, #ee254a), color-stop(60%, #ed2870), color-stop(80%, #c52378), to(#861766));
+    background: -webkit-linear-gradient(left, #ffd301 0%, #f4702a 21%, #ee254a 40%, #ed2870 60%, #c52378 80%, #861766 100%);
+    background: linear-gradient(90deg, #ffd301 0%, #f4702a 21%, #ee254a 40%, #ed2870 60%, #c52378 80%, #861766 100%);
+    width: 22px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .kyruus-custom-wrapper .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px;
+  }
+  .kyruus-custom-wrapper .icon-bar:nth-child(2) {
+    -webkit-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+  }
+  .kyruus-custom-wrapper .icon-bar:nth-child(3) {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  .kyruus-custom-wrapper .icon-bar:nth-child(4) {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  .kyruus-custom-wrapper label[for=nav-trigger] {
+    cursor: pointer;
+  }
+  .kyruus-custom-wrapper .nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+  }
+  .kyruus-custom-wrapper ul.pr-nav {
+    -webkit-transform: translateX(110%);
+    transform: translateX(110%);
+    position: fixed;
+    left: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #830065;
+    background-color: rgba(131, 0, 101, 0.95);
+    left: 0;
+    -webkit-transition: 400ms opacity;
+    transition: 400ms opacity;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  .kyruus-custom-wrapper #navTrigger:checked ~ #pr-nav {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  .kyruus-custom-wrapper #navTrigger:checked ~ label[for=navTrigger] {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+  }
+  .kyruus-custom-wrapper ul.pr-nav {
+    padding: 0 20px;
+  }
+  .kyruus-custom-wrapper ul.pr-nav li {
+    border-bottom: 1px solid #fff;
+    width: 100%;
+  }
+  .kyruus-custom-wrapper ul.pr-nav li:last-child {
+    border-bottom: 0;
+  }
+  .kyruus-custom-wrapper ul.pr-nav li > a {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  .kyruus-custom-wrapper ul.pr-nav a:hover,
+.kyruus-custom-wrapper ul.pr-nav a:focus {
+    color: #fff;
+  }
+  .kyruus-custom-wrapper label.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .kyruus-custom-wrapper #navTrigger:checked ~ label[for=navTrigger] .navbar-toggle .icon-bar {
+    background: #fff;
+  }
+  .kyruus-custom-wrapper #navTrigger:checked ~ label[for=navTrigger] .icon-bar:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 10% 10%;
+    transform-origin: 10% 10%;
+  }
+  .kyruus-custom-wrapper #navTrigger:checked ~ label[for=navTrigger] .icon-bar:nth-child(3) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  }
+  .kyruus-custom-wrapper #navTrigger:checked ~ label[for=navTrigger] .icon-bar:nth-child(4) {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 10% 90%;
+    transform-origin: 10% 90%;
+  }
+}
+
+/* -- CONTAINER + Responsive styles --*/
+.kyruus-custom-wrapper .pr-container {
+  margin: auto;
+  max-width: 100%;
+}
+@media (min-width: 1200px) {
+  .kyruus-custom-wrapper .pr-container {
+    width: 1400px;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1400px) and (min-width: 1200px) {
+  .kyruus-custom-wrapper .pr-container {
+    width: 1170px;
+  }
+  .kyruus-custom-wrapper .pr-nav a {
+    font-size: 14px;
+  }
+  .kyruus-custom-wrapper .pr-nav > li > a {
+    padding: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  .kyruus-custom-wrapper .pr-logo img {
+    max-width: 195px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 769px) {
+  .kyruus-custom-wrapper .pr-logo img {
+    max-width: 195px;
+  }
+  .kyruus-custom-wrapper .pr-nav a {
+    font-size: 14px;
+  }
+  .kyruus-custom-wrapper .pr-nav > li > a {
+    padding: 14px;
+  }
+  .kyruus-custom-wrapper .pr-mainnav .pr-nav {
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+  }
+}
+@media (max-width: 768px) {
+  .kyruus-custom-wrapper .pr-topnav ul > li a {
+    padding: 10px 16px 10px 0;
+    font-size: 13px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 769px) {
+  .kyruus-custom-wrapper .align-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}

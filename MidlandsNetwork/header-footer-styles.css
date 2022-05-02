@@ -228,11 +228,13 @@ body .kcw {
     text-decoration: none;
     white-space: nowrap;
     text-indent: 0;
-    font: normal 300 18px / 28px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
+    font: normal 300 18px / 28px "multi-display", Helvetica, Arial, Verdana, sans-serif;
+    font-family: 'multi-display';
 }
 
 .kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav a:hover, .kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav label:hover {
     color: #00b4e3;
+    cursor: pointer;
 }
 
 
@@ -369,6 +371,10 @@ body .kcw {
     z-index: 1;
 }
 
+.kcw .kcw__kyruus-custom-wrapper .bottom-bar >div {
+    display: flex;
+    margin: 0 20px;
+}
 .kcw .kcw__kyruus-custom-wrapper .bottom-bar:before {
     position: absolute;
     content: "";

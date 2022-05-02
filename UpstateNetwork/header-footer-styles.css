@@ -4,9 +4,7 @@
     .kcw .kcw__kyruus-custom-wrapper .kcw__top-bar.kcw__pr-container {
         display: none;
     }
-} 
-
-/* Fonts */
+} /* Fonts */
 @import url("https://p.typekit.net/p.css?s=1&k=gzc0ahq&ht=tk&f=30229.30230.30233&a=8691076&app=typekit&e=css");
 
 @font-face {
@@ -86,6 +84,19 @@ Reset Styles
 .kcw fieldset,
 .kcw img {
     border: 0;
+}
+
+.kcw address,
+.kcw caption,
+.kcw cite,
+.kcw code,
+.kcw dfn,
+.kcw em,
+.kcw strong,
+.kcw th,
+.kcw var {
+    /* font-style: normal; */
+    /* font-weight: normal; */
 }
 
 .kcw ol,
@@ -217,6 +228,7 @@ body .kcw {
     text-decoration: none;
     white-space: nowrap;
     text-indent: 0;
+    font: normal 300 18px / 28px "Montserrat", Helvetica, Arial, Verdana, sans-serif;
 }
 
 .kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav a:hover, .kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav label:hover {
@@ -292,6 +304,11 @@ body .kcw {
     display: flex;
     flex-wrap: wrap;
     margin: 0 20px;
+}
+@media(max-width:768px) {
+    .kcw .kcw__kyruus-custom-wrapper .footer .wrap {
+        flex-direction:column;
+    }
 }
 .kcw .kcw__kyruus-custom-wrapper .footer>.wrap>section {
     flex: 1;
@@ -634,14 +651,15 @@ body .kcw {
 
 @media (min-width: 1200px) {
     .kcw .kcw__kyruus-custom-wrapper .kcw__pr-container {
-        width: 1400px;
+        /* max-width: 1400px; */
         padding: 0 40px;
+        max-width: calc(1250px - 50px - 50px);
     }
 }
 
 @media (max-width: 1400px) and (min-width: 1200px) {
     .kcw .kcw__kyruus-custom-wrapper .kcw__pr-container {
-        width: 1170px;
+        max-width: 1170px;
     }
 
     .kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav a,.kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav label {
@@ -669,8 +687,9 @@ body .kcw {
         font-size: 14px;
     }
 
-    .kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav>li>a {
+    .kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav>li>a,.kcw .kcw__kyruus-custom-wrapper .kcw__pr-nav>li>label {
         padding: 14px;
+        font-size: 14px;
     }
 
     .kcw .kcw__kyruus-custom-wrapper .kcw__pr-mainnav .kcw__pr-nav {

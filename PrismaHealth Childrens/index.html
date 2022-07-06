@@ -1,0 +1,707 @@
+<html lang="en-US">
+
+<head><link rel="stylesheet" href="https://use.typekit.net/cli4fyl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title data-react-helmet="true">Find a Doctor | Prisma Health</title>
+
+    <meta data-react-helmet="true" name="description"
+        content="Find your doctor by specialty or condition at Prisma Health today. With more than 2400 providers conveniently located in Columbia and Greenville, South Carolina.">
+    <meta data-react-helmet="true" name="google-site-verification" content="">
+    <link href="https://cdn.kyruus.com/pmc-customer-static-assets/prisma/favicon/1.0/favicon.ico" rel="shortcut icon"
+        type="image/x-icon">
+    <style data-emotion-css="15qbpjt 149pb50 sanqhm 1eakbzh-SmallFadingLinesSpinner 1335pec">
+        .css-15qbpjt {
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 30px;
+            border-radius: calc(2px * 2);
+        }
+
+        .css-15qbpjt *,
+        .css-15qbpjt *:before,
+        .css-15qbpjt *:after {
+            box-sizing: border-box;
+        }
+
+        .css-15qbpjt * {
+            font-size: 14px;
+            color: #2A3D51;
+        }
+
+        .css-15qbpjt.__cq__[data-breakpoint=md] form>div {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: flex-end;
+            -webkit-box-align: flex-end;
+            -ms-flex-align: flex-end;
+            align-items: flex-end;
+        }
+
+        @media (min-width:768px) {
+            .css-15qbpjt.__mq__ form>div {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row;
+                -webkit-align-items: flex-end;
+                -webkit-box-align: flex-end;
+                -ms-flex-align: flex-end;
+                align-items: flex-end;
+            }
+        }
+
+        .css-149pb50 {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            margin: 0;
+            padding: 0;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-align-items: flex-start;
+            -webkit-box-align: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+        }
+
+        .css-149pb50>div {
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .css-149pb50 label {
+            display: inline;
+            text-indent: 0;
+            color: #000000;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0 8px 0 0;
+            padding: 0;
+            margin-bottom: 24px;
+        }
+
+        .css-149pb50 input {
+            color: #2A3D51;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0;
+            outline-color: #ed1849;
+            width: 100%;
+            border: 1px solid #D4D8DC;
+            padding: 8px;
+        }
+
+        .css-149pb50 input::-webkit-input-placeholder {
+            color: #667382;
+        }
+
+        .css-149pb50 input::-moz-placeholder {
+            color: #667382;
+        }
+
+        .css-149pb50 input:-ms-input-placeholder {
+            color: #667382;
+        }
+
+        .css-149pb50 input::placeholder {
+            color: #667382;
+        }
+
+        .css-149pb50 div.sw-input-container {
+            position: relative;
+        }
+
+        .css-149pb50 div.sw-spinner-container {
+            position: absolute;
+            left: 95%;
+            top: 45%;
+        }
+
+        .css-149pb50 div.sw-spinner-container>span>div {
+            border-color: #ed1849;
+            background-color: #ed1849;
+        }
+
+        .css-sanqhm {
+            opacity: 0;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner {
+            position: relative;
+            box-sizing: content-box;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div {
+            position: absolute;
+            height: 1px;
+            width: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            border-color: #00B3E6;
+            background-color: #00B3E6;
+            box-sizing: content-box;
+            -webkit-transform-origin: left center;
+            -ms-transform-origin: left center;
+            transform-origin: left center;
+            opacity: 0.5;
+            -webkit-animation: lines-spinner-fade 1s linear infinite;
+            animation: lines-spinner-fade 1s linear infinite;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(1) {
+            -webkit-transform: rotate(0deg) translateX(5px);
+            -ms-transform: rotate(0deg) translateX(5px);
+            transform: rotate(0deg) translateX(5px);
+            -webkit-animation-delay: -1s;
+            animation-delay: -1s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(2) {
+            -webkit-transform: rotate(36deg) translateX(5px);
+            -ms-transform: rotate(36deg) translateX(5px);
+            transform: rotate(36deg) translateX(5px);
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(3) {
+            -webkit-transform: rotate(72deg) translateX(5px);
+            -ms-transform: rotate(72deg) translateX(5px);
+            transform: rotate(72deg) translateX(5px);
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(4) {
+            -webkit-transform: rotate(108deg) translateX(5px);
+            -ms-transform: rotate(108deg) translateX(5px);
+            transform: rotate(108deg) translateX(5px);
+            -webkit-animation-delay: -0.7s;
+            animation-delay: -0.7s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(5) {
+            -webkit-transform: rotate(144deg) translateX(5px);
+            -ms-transform: rotate(144deg) translateX(5px);
+            transform: rotate(144deg) translateX(5px);
+            -webkit-animation-delay: -0.6s;
+            animation-delay: -0.6s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(6) {
+            -webkit-transform: rotate(180deg) translateX(5px);
+            -ms-transform: rotate(180deg) translateX(5px);
+            transform: rotate(180deg) translateX(5px);
+            -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(7) {
+            -webkit-transform: rotate(216deg) translateX(5px);
+            -ms-transform: rotate(216deg) translateX(5px);
+            transform: rotate(216deg) translateX(5px);
+            -webkit-animation-delay: -0.4s;
+            animation-delay: -0.4s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(8) {
+            -webkit-transform: rotate(252deg) translateX(5px);
+            -ms-transform: rotate(252deg) translateX(5px);
+            transform: rotate(252deg) translateX(5px);
+            -webkit-animation-delay: -0.3s;
+            animation-delay: -0.3s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(9) {
+            -webkit-transform: rotate(288deg) translateX(5px);
+            -ms-transform: rotate(288deg) translateX(5px);
+            transform: rotate(288deg) translateX(5px);
+            -webkit-animation-delay: -0.2s;
+            animation-delay: -0.2s;
+        }
+
+        .css-1eakbzh-SmallFadingLinesSpinner>div:nth-of-type(10) {
+            -webkit-transform: rotate(324deg) translateX(5px);
+            -ms-transform: rotate(324deg) translateX(5px);
+            transform: rotate(324deg) translateX(5px);
+            -webkit-animation-delay: -0.1s;
+            animation-delay: -0.1s;
+        }
+
+        @-webkit-keyframes lines-spinner-fade {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.25;
+            }
+        }
+
+        @keyframes lines-spinner-fade {
+            0% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.25;
+            }
+        }
+
+        .css-1335pec button {
+            -webkit-align-items: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #ed1849;
+            color: #FFFFFF;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .css-1335pec button:hover {
+            background-color: #ed1849;
+        }
+
+        .css-1335pec button svg {
+            position: relative;
+            color: #FFFFFF;
+            font-size: 14px;
+            top: -2px;
+        }
+
+        .css-1335pec button svg path {
+            color: inherit;
+        }
+
+        .css-1335pec button span {
+            margin-left: 3px;
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        .css-1335pec button {
+            -webkit-align-self: flex-end;
+            -ms-flex-item-align: end;
+            align-self: flex-end;
+            border-radius: calc(2px * 2);
+            border: none;
+            margin: 8px 0 0;
+            padding: 8px 32px;
+            width: 100%;
+        }
+
+        @media (min-width:768px) {
+            .__mq__ .css-1335pec button {
+                width: auto;
+                margin: 0 0 0 32px;
+            }
+        }
+
+        .__cq__[data-breakpoint="md"] .css-1335pec button {
+            width: auto;
+            margin: 0 0 0 32px;
+        }
+    </style>
+    <link rel="stylesheet"
+        href="https://cdn.kyruus.com/pmc-customer-static-assets/prisma/custom-style/1.2/prisma-custom.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.kyruus.com/lib/providermatch-consumer/7020a45a95d4e851cc776698934d6bff/providermatch-consumer.css">
+
+    <style data-jss="" data-meta="MuiAutocomplete">
+        .MuiAutocomplete-root.Mui-focused .MuiAutocomplete-clearIndicatorDirty {
+            visibility: visible;
+        }
+
+        @media (pointer: fine) {
+            .MuiAutocomplete-root:hover .MuiAutocomplete-clearIndicatorDirty {
+                visibility: visible;
+            }
+        }
+
+        .MuiAutocomplete-fullWidth {
+            width: 100%;
+        }
+
+        .MuiAutocomplete-tag {
+            margin: 3px;
+            max-width: calc(100% - 6px);
+        }
+
+        .MuiAutocomplete-tagSizeSmall {
+            margin: 2px;
+            max-width: calc(100% - 4px);
+        }
+
+        .MuiAutocomplete-inputRoot {
+            flex-wrap: wrap;
+        }
+
+        .MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot,
+        .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot {
+            padding-right: 30px;
+        }
+
+        .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot {
+            padding-right: 56px;
+        }
+
+        .MuiAutocomplete-inputRoot .MuiAutocomplete-input {
+            width: 0;
+            min-width: 30px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiInput-root"] {
+            padding-bottom: 1px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+            padding: 9px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"][class*="MuiOutlinedInput-marginDense"] {
+            padding: 6px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] {
+            padding-top: 19px;
+            padding-left: 8px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"][class*="MuiFilledInput-marginDense"] {
+            padding-bottom: 1px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"][class*="MuiFilledInput-marginDense"] .MuiAutocomplete-input {
+            padding: 4.5px 4px;
+        }
+
+        .MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"],
+        .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] {
+            padding-right: 39px;
+        }
+
+        .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] {
+            padding-right: 65px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] .MuiAutocomplete-input {
+            padding: 9px 4px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiFilledInput-root"] .MuiAutocomplete-endAdornment {
+            right: 9px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"][class*="MuiOutlinedInput-marginDense"] .MuiAutocomplete-input {
+            padding: 4.5px 4px;
+        }
+
+        .MuiAutocomplete-hasPopupIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"],
+        .MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+            padding-right: 39px;
+        }
+
+        .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+            padding-right: 65px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] .MuiAutocomplete-input {
+            padding: 9.5px 4px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] .MuiAutocomplete-input:first-child {
+            padding-left: 6px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] .MuiAutocomplete-endAdornment {
+            right: 9px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiInput-root"][class*="MuiInput-marginDense"] .MuiAutocomplete-input {
+            padding: 4px 4px 5px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiInput-root"][class*="MuiInput-marginDense"] .MuiAutocomplete-input:first-child {
+            padding: 3px 0 6px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiInput-root"] .MuiAutocomplete-input {
+            padding: 4px;
+        }
+
+        .MuiAutocomplete-inputRoot[class*="MuiInput-root"] .MuiAutocomplete-input:first-child {
+            padding: 6px 0;
+        }
+
+        .MuiAutocomplete-input {
+            opacity: 0;
+            flex-grow: 1;
+            text-overflow: ellipsis;
+        }
+
+        .MuiAutocomplete-inputFocused {
+            opacity: 1;
+        }
+
+        .MuiAutocomplete-endAdornment {
+            top: calc(50% - 14px);
+            right: 0;
+            position: absolute;
+        }
+
+        .MuiAutocomplete-clearIndicator {
+            padding: 4px;
+            visibility: hidden;
+            margin-right: -2px;
+        }
+
+        .MuiAutocomplete-popupIndicator {
+            padding: 2px;
+            margin-right: -2px;
+        }
+
+        .MuiAutocomplete-popupIndicatorOpen {
+            transform: rotate(180deg);
+        }
+
+        .MuiAutocomplete-popper {
+            z-index: 1300;
+        }
+
+        .MuiAutocomplete-popperDisablePortal {
+            position: absolute;
+        }
+
+        .MuiAutocomplete-paper {
+            margin: 4px 0;
+            overflow: hidden;
+            font-size: 1rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+        }
+
+        .MuiAutocomplete-listbox {
+            margin: 0;
+            padding: 8px 0;
+            overflow: auto;
+            list-style: none;
+            max-height: 40vh;
+        }
+
+        .MuiAutocomplete-loading {
+            color: rgba(0, 0, 0, 0.54);
+            padding: 14px 16px;
+        }
+
+        .MuiAutocomplete-noOptions {
+            color: rgba(0, 0, 0, 0.54);
+            padding: 14px 16px;
+        }
+
+        .MuiAutocomplete-option {
+            cursor: pointer;
+            display: flex;
+            outline: 0;
+            box-sizing: border-box;
+            min-height: 48px;
+            align-items: center;
+            padding-top: 6px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-bottom: 6px;
+            justify-content: flex-start;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        @media (min-width:600px) {
+            .MuiAutocomplete-option {
+                min-height: auto;
+            }
+        }
+
+        .MuiAutocomplete-option[aria-selected="true"] {
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .MuiAutocomplete-option[data-focus="true"] {
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
+        .MuiAutocomplete-option:active {
+            background-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .MuiAutocomplete-option[aria-disabled="true"] {
+            opacity: 0.38;
+            pointer-events: none;
+        }
+
+        .MuiAutocomplete-groupLabel {
+            top: -8px;
+            background-color: #fff;
+        }
+
+        .MuiAutocomplete-groupUl {
+            padding: 0;
+        }
+
+        .MuiAutocomplete-groupUl .MuiAutocomplete-option {
+            padding-left: 24px;
+        }
+    </style>
+    <script src="chrome-extension://aefalnopbcachhkjnihfjgglnjdegicg/inject.setextensionmode.js"></script>
+    <script src="chrome-extension://aefalnopbcachhkjnihfjgglnjdegicg/inject.setcshuserobject.js"></script>
+</head>
+
+<body data-customer-id="prisma">
+    <div class="page-content-wrapper">
+    
+        <!-- Load Header HTML --> 
+        <div id="customH"></div>
+    
+        <div class="kyruus-custom pt-b">
+
+            <div class="kyruus-config-font">
+                <div id="pmc-app" role="main">
+                    <div class="container kyruus-custom pt-m pb-m">
+                        <div class="__mq__ css-15qbpjt" data-breakpoint="md">
+                            <form>
+                                <div>
+                                    <div class="css-149pb50"><label for="0.p4vh08u9od" data-testid="sw-label">How can we
+                                            help you today?</label>
+                                        <div>
+                                            <div class="MuiAutocomplete-root MuiAutocomplete-hasClearIcon"
+                                                role="combobox" aria-expanded="false">
+                                                <div class="sw-input-container"><input data-testid="sw-text-input"
+                                                        type="text" name="searchTerm" role="searchbox"
+                                                        aria-expanded="false"
+                                                        aria-label="Start typing to receive relevant suggestions or enter text and submit to perform a search"
+                                                        placeholder="Search for a condition, specialty, provider name or practice location"
+                                                        class="MuiAutocomplete-input MuiAutocomplete-inputFocused"
+                                                        id="0.p4vh08u9od" aria-autocomplete="both" autocomplete="off"
+                                                        autocapitalize="none" spellcheck="false" value="">
+                                                    <div class="sw-spinner-container css-sanqhm"><span
+                                                            class="css-1eakbzh-SmallFadingLinesSpinner e1cgn2gf0">
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                            <div></div>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="css-1335pec"><button type="submit" data-testid="sw-button"><svg
+                                                aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 32 32"
+                                                style="height: 1.3em; fill: currentcolor; max-width: 1.3em;">
+                                                <title>Search</title>
+                                                <path
+                                                    d="M12.688 21.344q2.5 0 4.25-1.75t1.75-4.25-1.75-4.25-4.25-1.75-4.25 1.75-1.75 4.25 1.75 4.25 4.25 1.75zM20.688 21.344l6.625 6.625-2 2-6.625-6.625v-1.063l-0.375-0.375q-2.375 2.063-5.625 2.063-3.625 0-6.156-2.5t-2.531-6.125 2.531-6.156 6.156-2.531 6.125 2.531 2.5 6.156q0 3.25-2.063 5.625l0.375 0.375h1.063z">
+                                                </path>
+                                            </svg></button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer hidden-print">
+    
+        <!-- Load Footer HTML --> 
+        <div id="customF"></div>
+
+    </div>
+    <meta id="state"
+        content="{&quot;loading&quot;:true,&quot;error&quot;:false,&quot;search&quot;:{&quot;providerIds&quot;:[],&quot;totalProviders&quot;:null,&quot;totalPages&quot;:null,&quot;facets&quot;:[],&quot;searchSummary&quot;:{},&quot;sortOptions&quot;:[]},&quot;providers&quot;:{},&quot;profiles&quot;:{},&quot;config&quot;:{&quot;application_string_templates&quot;:{&quot;appointment_booked.complete.message&quot;:&quot;&quot;,&quot;appointment_method.video_title&quot;:&quot;Video Care&quot;,&quot;cta.button&quot;:&quot;Book Appointment&quot;,&quot;cta.modal.bookonline.button&quot;:&quot;Book Online&quot;,&quot;cta.modal.bookonline.message&quot;:&quot;Book an appointment directly online.&quot;,&quot;cta.modal.header&quot;:&quot;Book an Appointment with {providerName}&quot;,&quot;cta.modal.virtualcare.buttontext&quot;:&quot;Virtual Care&quot;,&quot;cta.modal.virtualcare.message&quot;:&quot;Start a virtual care now.&quot;,&quot;error.contact_office&quot;:&quot;Please contact the office directly at {phone_number_link} or login to your existing MyChart account.&quot;,&quot;error.no_appointment_purposes&quot;:&quot;To book this appointment:&quot;,&quot;facet.name.address.facility_name_search&quot;:&quot;Practice Name&quot;,&quot;facet.name.direct_book_capable&quot;:&quot;Book Online&quot;,&quot;facet.name.hospital_affiliations&quot;:&quot;Affiliations&quot;,&quot;facet.name.is_primary_care&quot;:&quot;Primary Care&quot;,&quot;facet.name.is_specialty_care&quot;:&quot;Specialty Care&quot;,&quot;facet.name.network_affiliations.name&quot;:&quot;Affiliations&quot;,&quot;facet.name.provider_type&quot;:&quot;Provider Type&quot;,&quot;facet.name.specialties.specialty.untouched&quot;:&quot;Specialties&quot;,&quot;facet.name.specialties.subspecialty.untouched&quot;:&quot;Subspecialties&quot;,&quot;facet.name.tytocare_virtual_visit&quot;:&quot;Tytocare&quot;,&quot;facet.network_affiliations.name.typeahead.placeholder&quot;:&quot;Choose Affiliations&quot;,&quot;facet.specialties.specialty.untouched.typeahead.placeholder&quot;:&quot;Choose Specialties&quot;,&quot;facet.specialties.subspecialty.untouched.typeahead.placeholder&quot;:&quot;Choose Subspecialties&quot;,&quot;field.name.accepting_new_patients&quot;:&quot;Accepting New Patients&quot;,&quot;field.name.address.facility_name_search&quot;:&quot;Practice Name&quot;,&quot;field.name.age_groups_seen.name&quot;:&quot;Age Groups Seen&quot;,&quot;field.name.direct_book_capable&quot;:&quot;Book Online&quot;,&quot;field.name.division&quot;:&quot;Division&quot;,&quot;field.name.gender&quot;:&quot;Provider Gender&quot;,&quot;field.name.hospital&quot;:&quot;Affiliations&quot;,&quot;field.name.hospital_affiliations&quot;:&quot;Affiliations&quot;,&quot;field.name.insurance_disclaimer&quot;:&quot;Insurance Disclaimer&quot;,&quot;field.name.insurance_plans&quot;:&quot;Insurance Accepted&quot;,&quot;field.name.is_primary_care&quot;:&quot;Primary Care&quot;,&quot;field.name.is_specialty_care&quot;:&quot;Specialty Care&quot;,&quot;field.name.languages.language&quot;:&quot;Language&quot;,&quot;field.name.location_type&quot;:&quot;Location Type&quot;,&quot;field.name.network_affiliations.name&quot;:&quot;Affiliations&quot;,&quot;field.name.referral_required_badge&quot;:&quot;Referral Required&quot;,&quot;field.name.specialties.specialty&quot;:&quot;Specialties&quot;,&quot;field.name.specialties.specialty.untouched&quot;:&quot;Specialties&quot;,&quot;field.name.specialties.subspecialty.untouched&quot;:&quot;Subspecialties&quot;,&quot;field.name.telehealth_badge&quot;:&quot;Virtual Care Available&quot;,&quot;field.name.tytocare_virtual_visit&quot;:&quot;Tytocare&quot;,&quot;field.name.virtual_care&quot;:&quot;Virtual Care Available&quot;,&quot;field.value.accepting_new_patients.T&quot;:&quot;Yes&quot;,&quot;field.value.direct_book_capable.T&quot;:&quot;Book Online&quot;,&quot;field.value.is_primary_care.T&quot;:&quot;Yes&quot;,&quot;field.value.is_specialty_care.T&quot;:&quot;Yes&quot;,&quot;field.value.referral_required_badge.T&quot;:&quot;Yes&quot;,&quot;field.value.telehealth_badge.T&quot;:&quot;Yes&quot;,&quot;field.value.tytocare_virtual_visit.T&quot;:&quot;Yes&quot;,&quot;field.value.tytocare_virtual_visit_badge.T&quot;:&quot;Yes&quot;,&quot;field.value.virtual_care.T&quot;:&quot;Yes&quot;,&quot;provider.badge.accepting_new_patients&quot;:&quot;Practice Accepting New Patients&quot;,&quot;provider.badge.referral_required_badge&quot;:&quot;Referral Required&quot;,&quot;provider.badge.tytocare_virtual_visit&quot;:&quot;Tytocare&quot;,&quot;provider.profile.insurancedisclaimer.message&quot;:&quot;Note: Please contact your insurance provider to confirm participation&quot;,&quot;provider.profile.panel.insurance&quot;:&quot;Insurance&quot;,&quot;provider.profile.ratingsdisclaimer&quot;:&quot;The Patient Satisfaction Rating is derived from patient surveys based on the likelihood to recommend this provider’s office.&quot;,&quot;providerlist.pagedescription.basic&quot;:&quot;Find your doctor by specialty or condition at Prisma Health today. With more than 2400 providers conveniently located in Columbia and Greenville, South Carolina.&quot;,&quot;providerlist.pagedescription.withquery&quot;:&quot;{searchTerm} - Find your doctor by specialty or condition at Prisma Health today. With more than 2400 providers conveniently located in Columbia and Greenville, South Carolina.&quot;,&quot;providerlist.pagetitle.basic&quot;:&quot;Find a Doctor | Prisma Health&quot;,&quot;providerlist.pagetitle.withquery&quot;:&quot;{searchTerm} | Find a Doctor | Prisma Health&quot;,&quot;providerlist.pagetitle.withqueryandlocation&quot;:&quot;{searchTerm} in {location} | Find a Doctor | Prisma Health&quot;,&quot;providerlist.virtualproviderdogearbanner&quot;:&quot;Video Care&quot;,&quot;searchwidget.label&quot;:&quot;How can we help you today?&quot;,&quot;searchwidget.placeholder&quot;:&quot;Search for a condition, specialty, provider name or practice location&quot;,&quot;step_title.confirm_appointment&quot;:&quot;Confirm information and book appointment with {display_name}&quot;,&quot;step_title.existing_patient&quot;:&quot;Have you been seen by {display_name} in the last three years?&quot;,&quot;step_title.patient_information&quot;:&quot;Please provide patient information&quot;,&quot;steps.confirm_appointment&quot;:&quot;Confirmation&quot;},&quot;domains&quot;:[&quot;pmc-prisma-employed.provider-match.com&quot;,&quot;doctors.prismahealth.org&quot;],&quot;facets&quot;:[{&quot;field&quot;:&quot;region&quot;,&quot;input_type&quot;:&quot;checkbox&quot;},{&quot;field&quot;:&quot;direct_book_capable&quot;,&quot;ignore&quot;:[&quot;F&quot;],&quot;input_type&quot;:&quot;checkbox&quot;,&quot;name&quot;:&quot;Book Online&quot;},{&quot;conversions&quot;:{},&quot;field&quot;:&quot;specialties.specialty.untouched&quot;,&quot;ignore&quot;:[],&quot;input_type&quot;:&quot;typeahead&quot;,&quot;max_visible&quot;:5,&quot;name&quot;:&quot;Specialties&quot;,&quot;order_by&quot;:&quot;alphanumeric&quot;,&quot;order_by_custom&quot;:[],&quot;show_count&quot;:true,&quot;titlecase&quot;:false,&quot;typeahead&quot;:{&quot;all_filters_label&quot;:&quot;&quot;,&quot;placeholder&quot;:&quot;&quot;,&quot;top_filters&quot;:[],&quot;top_filters_label&quot;:&quot;&quot;}},{&quot;field&quot;:&quot;virtual_care&quot;,&quot;ignore&quot;:[&quot;&quot;,&quot;F&quot;],&quot;name&quot;:&quot;Virtual Care&quot;,&quot;show_count&quot;:true},{&quot;conversions&quot;:{&quot;T&quot;:&quot;Yes&quot;},&quot;field&quot;:&quot;tytocare_virtual_visit&quot;,&quot;ignore&quot;:[&quot;&quot;,&quot;F&quot;],&quot;name&quot;:&quot;Tytocare&quot;,&quot;show_count&quot;:true},{&quot;field&quot;:&quot;address.facility_name_search&quot;,&quot;input_type&quot;:&quot;typeahead&quot;},{&quot;field&quot;:&quot;provider_type&quot;,&quot;ignore&quot;:[&quot;None&quot;,&quot;Other&quot;],&quot;name&quot;:&quot;Provider Type&quot;},{&quot;field&quot;:&quot;age_groups_seen.name&quot;,&quot;order_by_custom&quot;:[&quot;Infants and Toddlers&quot;,&quot;Children 2-4&quot;,&quot;Children 5 and up&quot;,&quot;Teens&quot;,&quot;Adults&quot;,&quot;Adults 65 and up&quot;]},{&quot;conversions&quot;:{&quot;T&quot;:&quot;Yes&quot;},&quot;field&quot;:&quot;is_primary_care&quot;,&quot;ignore&quot;:[&quot;F&quot;],&quot;name&quot;:&quot;Primary Care&quot;,&quot;show_count&quot;:true},{&quot;conversions&quot;:{&quot;T&quot;:&quot;Yes&quot;},&quot;field&quot;:&quot;is_specialty_care&quot;,&quot;ignore&quot;:[&quot;F&quot;],&quot;name&quot;:&quot;Specialty Care&quot;,&quot;show_count&quot;:true},{&quot;field&quot;:&quot;gender&quot;,&quot;ignore&quot;:[&quot;Unknown&quot;],&quot;input_type&quot;:&quot;radio&quot;},{&quot;conversions&quot;:{&quot;T&quot;:&quot;Yes&quot;},&quot;field&quot;:&quot;accepting_new_patients&quot;,&quot;ignore&quot;:[&quot;F&quot;],&quot;input_type&quot;:&quot;radio&quot;},{&quot;field&quot;:&quot;languages.language&quot;,&quot;input_type&quot;:&quot;typeahead&quot;,&quot;order_by&quot;:&quot;frequency&quot;}],&quot;locale&quot;:&quot;en-US&quot;,&quot;location_facet&quot;:{&quot;miles&quot;:&quot;10&quot;,&quot;options&quot;:[&quot;Any&quot;,&quot;1&quot;,&quot;5&quot;,&quot;10&quot;,&quot;25&quot;,&quot;50&quot;,&quot;100&quot;],&quot;placeholder&quot;:&quot;City, State (e.g. Atlanta, GA) or Zip&quot;},&quot;logging_metadata&quot;:{&quot;init_metadata&quot;:{&quot;product_name&quot;:&quot;Providermatch Client&quot;,&quot;deployment&quot;:&quot;prd&quot;,&quot;customer_code&quot;:&quot;prisma&quot;,&quot;user_id&quot;:&quot;86617ec6-7dc0-4e42-a713-c671448e8873&quot;,&quot;tracking_token&quot;:&quot;2346807c-229f-435b-914d-74fa49a67b94&quot;},&quot;event_metadata&quot;:{&quot;user_type&quot;:&quot;Anonymous&quot;,&quot;customer_id&quot;:&quot;prisma&quot;,&quot;distinct_id&quot;:&quot;7a54c835-5040-54e4-ac5d-b840943ff32a&quot;,&quot;search_token&quot;:&quot;01d495a3-5331-4f8f-8ad5-f37a3f285d66&quot;,&quot;user_token&quot;:&quot;86617ec6-7dc0-4e42-a713-c671448e8873&quot;}},&quot;logos&quot;:[],&quot;modal_display&quot;:{&quot;book_online_url&quot;:true,&quot;hide_cta&quot;:true,&quot;hide_modal&quot;:true,&quot;phone&quot;:true,&quot;request_form_url&quot;:true,&quot;skip_modal&quot;:false,&quot;virtual_care&quot;:true},&quot;provider&quot;:{&quot;badge_data&quot;:[{&quot;field&quot;:&quot;accepting_new_patients&quot;},{&quot;field&quot;:&quot;tytocare_virtual_visit&quot;,&quot;ignore&quot;:[&quot;False&quot;]},{&quot;field&quot;:&quot;referral_required_badge&quot;,&quot;ignore&quot;:[&quot;False&quot;]}],&quot;experience_data&quot;:[{&quot;columns&quot;:[{&quot;ignore_values&quot;:[],&quot;name&quot;:&quot;name&quot;},{&quot;ignore_values&quot;:[&quot;Unknown&quot;],&quot;name&quot;:&quot;type&quot;},{&quot;name&quot;:&quot;field_of_study&quot;},{&quot;display_as&quot;:&quot;Year&quot;,&quot;ignore_values&quot;:[],&quot;name&quot;:&quot;graduation_year&quot;}],&quot;field&quot;:&quot;training&quot;,&quot;sort_rows_by&quot;:[{&quot;column&quot;:&quot;graduation_year&quot;,&quot;reverse&quot;:false},{&quot;column&quot;:&quot;institution&quot;,&quot;reverse&quot;:false}]},{&quot;field&quot;:&quot;board_certifications&quot;,&quot;sort_rows_by&quot;:[{&quot;column&quot;:&quot;year_certified&quot;,&quot;reverse&quot;:false}]},{&quot;field&quot;:&quot;clinical_trials&quot;,&quot;field_type&quot;:&quot;list&quot;}],&quot;experience_data_fields&quot;:{&quot;board_certifications&quot;:{&quot;ignore&quot;:[],&quot;order_by&quot;:[{&quot;reverse&quot;:false,&quot;subfield&quot;:&quot;year_certified&quot;}]},&quot;training&quot;:{&quot;ignore&quot;:[{&quot;subfield&quot;:&quot;type&quot;,&quot;values&quot;:[&quot;Unknown&quot;]}],&quot;order_by&quot;:[{&quot;reverse&quot;:true,&quot;subfield&quot;:&quot;graduation_year&quot;},{&quot;reverse&quot;:true,&quot;subfield&quot;:&quot;institution&quot;}]}},&quot;summary_data&quot;:[{&quot;field&quot;:&quot;professional_statement&quot;},{&quot;field&quot;:&quot;gender&quot;},{&quot;field&quot;:&quot;languages&quot;,&quot;subfield&quot;:&quot;language&quot;},{&quot;field&quot;:&quot;age_groups_seen&quot;,&quot;subfield&quot;:&quot;name&quot;},{&quot;field&quot;:&quot;location_type&quot;},{&quot;field&quot;:&quot;industry_relationships&quot;,&quot;field_type&quot;:&quot;rich_text&quot;}],&quot;tabs&quot;:[{&quot;content&quot;:&quot;provider/tab/summary&quot;,&quot;data&quot;:{&quot;role&quot;:&quot;profile&quot;},&quot;href&quot;:&quot;profile&quot;},{&quot;content&quot;:&quot;provider/tab/locations&quot;,&quot;data&quot;:{&quot;role&quot;:&quot;locations&quot;},&quot;href&quot;:&quot;locations&quot;},{&quot;content&quot;:&quot;provider/tab/insurance&quot;,&quot;data&quot;:{&quot;role&quot;:&quot;insurance&quot;},&quot;href&quot;:&quot;insurance&quot;},{&quot;data&quot;:{&quot;role&quot;:&quot;reviews&quot;},&quot;enabled&quot;:true},{&quot;content&quot;:&quot;provider/tab/summary&quot;,&quot;data&quot;:{&quot;role&quot;:&quot;profile&quot;},&quot;enabled&quot;:true,&quot;href&quot;:&quot;experience&quot;}]},&quot;show_powered_by_kyruus_logo&quot;:true,&quot;search_results_page&quot;:{&quot;summary_data&quot;:[{&quot;field&quot;:&quot;specialties&quot;,&quot;secondary_subfield&quot;:&quot;subspecialty&quot;,&quot;subfield&quot;:&quot;specialty&quot;}]},&quot;search_widget&quot;:{&quot;external_link&quot;:&quot;&quot;,&quot;focus_on_widget&quot;:false,&quot;legal_message&quot;:&quot;off&quot;,&quot;location_search_radius&quot;:&quot;25&quot;,&quot;persist_params&quot;:[],&quot;persist_query&quot;:true,&quot;show_filters&quot;:false,&quot;show_location&quot;:false,&quot;show_powered_by&quot;:false,&quot;sort_order&quot;:&quot;networks,relevance&quot;,&quot;timeout&quot;:4000,&quot;typeahead_categories&quot;:[{&quot;category&quot;:&quot;specialty_synonym&quot;},{&quot;category&quot;:&quot;clinical_experience&quot;},{&quot;category&quot;:&quot;name&quot;},{&quot;category&quot;:&quot;practice_location&quot;},{&quot;category&quot;:&quot;primary_care&quot;}],&quot;use_primary_care_condition&quot;:false,&quot;allow_empty_search&quot;:true,&quot;template_name&quot;:&quot;defaultPMC&quot;},&quot;pmcdb&quot;:{&quot;active_modules&quot;:[&quot;search_match&quot;,&quot;direct_book&quot;],&quot;allow_cancellation&quot;:false,&quot;application_string_templates&quot;:{&quot;appointment_booked.complete.appointment_details_header&quot;:&quot;Appointment Details&quot;,&quot;appointment_booked.complete.message&quot;:&quot;&quot;,&quot;appointment_booked.requested.appointment_details_header&quot;:&quot;Requested appointment Details for {{ first_name }} {{ last_name }}:&quot;,&quot;appointment_booked.requested.message&quot;:&quot;The appointment you requested requires follow up before it can be confirmed. We've noted your preferred appointment time and will contact you within one business day to complete the scheduling process.&quot;,&quot;appointment_panel.existing_patient_type&quot;:&quot;Established Patient&quot;,&quot;error.contact_office&quot;:&quot;To book this appointment, please contact the office directly {{phone}} or login to your existing MyChart account.&quot;,&quot;error.no_appointment_purposes&quot;:&quot; &quot;,&quot;error.subtitle_text&quot;:&quot;Please try again later.&quot;,&quot;error.title_text&quot;:&quot;There was a problem processing your request.&quot;,&quot;error.unable_to_book_online&quot;:&quot; &quot;,&quot;provider_schedule.all_appts&quot;:&quot;All Appts&quot;,&quot;provider_schedule.fetch_schedule&quot;:&quot;Finding available appointments for&quot;,&quot;step_title.appointment_booked.complete&quot;:&quot;Your appointment is confirmed&quot;,&quot;step_title.appointment_booked.requested&quot;:&quot;Thank you for requesting an appointment&quot;,&quot;step_title.appointment_canceled&quot;:&quot;Your appointment has been canceled&quot;,&quot;step_title.appointment_reason&quot;:&quot;What is the main reason for your visit?&quot;,&quot;step_title.cancel_appointment&quot;:&quot;Are you sure you want to cancel this Appointment?&quot;,&quot;step_title.confirm_appointment&quot;:&quot;Confirm information and book appointment with {{ display_name }}&quot;,&quot;step_title.existing_patient&quot;:&quot;Have you seen {{ display_name }} in the last three years?&quot;,&quot;step_title.patient_information&quot;:&quot;Please provide patient information&quot;,&quot;step_title.provider_locations&quot;:&quot;Where would you like to see {{ display_name }}?&quot;,&quot;step_title.provider_schedule&quot;:&quot;When would you like to see {{ display_name }}?&quot;,&quot;steps.confirm_appointment&quot;:&quot;Confirmation&quot;,&quot;steps.existing_patient&quot;:&quot;Reason&quot;,&quot;steps.patient_information&quot;:&quot;Patient Registration&quot;,&quot;steps.provider_locations&quot;:&quot;Location&quot;,&quot;steps.provider_schedule&quot;:&quot;Date&quot;},&quot;appointment_filter_config&quot;:{&quot;show_appts_days_after_today&quot;:0},&quot;darkship__KENG_6874&quot;:true,&quot;direct_book_enabled&quot;:true,&quot;google_tag_manager_id&quot;:&quot;GTM-P8QWW8F&quot;,&quot;keng8312_use_sched_v2&quot;:true,&quot;patient_reg_form&quot;:{&quot;addOns&quot;:{&quot;consent-add-on&quot;:[{&quot;sentence&quot;:&quot;Confirmation and reminder emails may contain personal and protected health information.&quot;},{&quot;hasModal&quot;:true,&quot;modalContent&quot;:{&quot;body&quot;:[&quot;The Health Insurance Portability and Accountability Act of 1996 (HIPAA) recommends that e-mail containing protected health information be encrypted. We cannot guarantee that appointment confirmation e-mails will be encrypted and therefore it is possible that the confidentiality of such communications may be breached by a third party.&quot;,&quot;E-mails can easily be circulated and forwarded to unintended recipients.&quot;,&quot;Backup copies of e-mails may exist even after the recipient has deleted his or her copy.&quot;,&quot;Employers and on-line services have a right to inspect e-mails transmitted through their systems.&quot;,&quot;E-mails may be able to be intercepted, altered, forwarded, or used without authorization or detection.&quot;],&quot;title&quot;:&quot;Risks of Emailing Health Information&quot;},&quot;sentence&quot;:&quot;Learn more about the risks of e-mailing this information.&quot;}]},&quot;disclaimer&quot;:&quot;By submitting this form you agree to receive periodic health related information and updates from us. If mobile phone entered, standard messaging rates apply.&quot;,&quot;fields&quot;:[{&quot;subFields&quot;:{&quot;first&quot;:{&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;First name is required&quot;,&quot;label&quot;:&quot;First Name&quot;,&quot;path&quot;:&quot;patient.name.first&quot;,&quot;placeholder&quot;:&quot;Legal First Name&quot;},&quot;last&quot;:{&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Last name is required&quot;,&quot;label&quot;:&quot;Last Name&quot;,&quot;path&quot;:&quot;patient.name.last&quot;,&quot;placeholder&quot;:&quot;Legal Last Name&quot;},&quot;middle&quot;:{&quot;isRequired&quot;:false,&quot;label&quot;:&quot;Middle Name&quot;,&quot;path&quot;:&quot;patient.name.middle&quot;,&quot;placeholder&quot;:&quot;Legal Middle Name&quot;}},&quot;type&quot;:&quot;name&quot;},{&quot;day&quot;:{&quot;ariaDescription&quot;:&quot;This is a numeric input that accepts a two-digit day and will automatically focus into the next input for you.&quot;,&quot;autoComplete&quot;:&quot;bday-day&quot;,&quot;invalidMsg&quot;:&quot;Please enter a valid day.&quot;,&quot;isRequiredMsg&quot;:&quot;Day is required.&quot;,&quot;label&quot;:&quot;Day&quot;,&quot;name&quot;:&quot;dob-day&quot;,&quot;placeholder&quot;:&quot;DD&quot;},&quot;group&quot;:&quot;DOB, Gender, Phone&quot;,&quot;invalidMsg&quot;:&quot;Please enter a valid date of birth&quot;,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Date of birth is required&quot;,&quot;label&quot;:&quot;Date of Birth&quot;,&quot;month&quot;:{&quot;ariaDescription&quot;:&quot;This is a numeric input that accepts a two-digit month and will automatically focus into the next input for you.&quot;,&quot;autoComplete&quot;:&quot;bday-month&quot;,&quot;invalidMsg&quot;:&quot;Please enter a valid month.&quot;,&quot;isRequiredMsg&quot;:&quot;Month is required.&quot;,&quot;label&quot;:&quot;Month&quot;,&quot;name&quot;:&quot;dob-month&quot;,&quot;placeholder&quot;:&quot;MM&quot;},&quot;path&quot;:&quot;patient.dob&quot;,&quot;type&quot;:&quot;dob&quot;,&quot;year&quot;:{&quot;ariaDescription&quot;:&quot;This is a numeric input that accepts a four-digit year.&quot;,&quot;autoComplete&quot;:&quot;bday-year&quot;,&quot;invalidMsg&quot;:&quot;Please enter a valid year.&quot;,&quot;isRequiredMsg&quot;:&quot;Year is required.&quot;,&quot;label&quot;:&quot;Year&quot;,&quot;name&quot;:&quot;dob-year&quot;,&quot;placeholder&quot;:&quot;YYYY&quot;}},{&quot;group&quot;:&quot;DOB, Gender, Phone&quot;,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Gender is required&quot;,&quot;label&quot;:&quot;Gender&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Female&quot;,&quot;value&quot;:&quot;female&quot;},{&quot;label&quot;:&quot;Male&quot;,&quot;value&quot;:&quot;male&quot;},{&quot;label&quot;:&quot;Unknown&quot;,&quot;value&quot;:&quot;Unknown&quot;}],&quot;path&quot;:&quot;patient.gender&quot;,&quot;placeholder&quot;:&quot;Gender&quot;,&quot;type&quot;:&quot;simpleSelect&quot;},{&quot;group&quot;:&quot;DOB, Gender, Phone&quot;,&quot;isRequired&quot;:true,&quot;label&quot;:&quot;Phone Number&quot;,&quot;subFields&quot;:{&quot;phone&quot;:{&quot;countryFormat&quot;:&quot;US&quot;,&quot;invalidMsg&quot;:&quot;Phone format (999) 999-9999&quot;,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Phone is required&quot;,&quot;path&quot;:&quot;patient.phone.number&quot;,&quot;placeholder&quot;:&quot;(___) ___-____&quot;}},&quot;type&quot;:&quot;phone&quot;,&quot;width&quot;:&quot;l&quot;},{&quot;invalidMsg&quot;:&quot;SSN format is xxxx&quot;,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;SSN is required&quot;,&quot;label&quot;:&quot;Last 4 Digits of Social Security Number&quot;,&quot;masked&quot;:true,&quot;numDigits&quot;:4,&quot;path&quot;:&quot;patient.last4_ssn&quot;,&quot;placeholder&quot;:&quot;xxxx&quot;,&quot;type&quot;:&quot;ssn&quot;},{&quot;label&quot;:&quot;Address&quot;,&quot;subFields&quot;:{&quot;city&quot;:{&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;City is required&quot;,&quot;path&quot;:&quot;patient.address.city&quot;,&quot;placeholder&quot;:&quot;City&quot;},&quot;state&quot;:{&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;State is required&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;AL&quot;,&quot;value&quot;:&quot;AL&quot;},{&quot;label&quot;:&quot;AK&quot;,&quot;value&quot;:&quot;AK&quot;},{&quot;label&quot;:&quot;AZ&quot;,&quot;value&quot;:&quot;AZ&quot;},{&quot;label&quot;:&quot;AR&quot;,&quot;value&quot;:&quot;AR&quot;},{&quot;label&quot;:&quot;CA&quot;,&quot;value&quot;:&quot;CA&quot;},{&quot;label&quot;:&quot;CO&quot;,&quot;value&quot;:&quot;CO&quot;},{&quot;label&quot;:&quot;CT&quot;,&quot;value&quot;:&quot;CT&quot;},{&quot;label&quot;:&quot;DE&quot;,&quot;value&quot;:&quot;DE&quot;},{&quot;label&quot;:&quot;FL&quot;,&quot;value&quot;:&quot;FL&quot;},{&quot;label&quot;:&quot;GA&quot;,&quot;value&quot;:&quot;GA&quot;},{&quot;label&quot;:&quot;HI&quot;,&quot;value&quot;:&quot;HI&quot;},{&quot;label&quot;:&quot;ID&quot;,&quot;value&quot;:&quot;ID&quot;},{&quot;label&quot;:&quot;IL&quot;,&quot;value&quot;:&quot;IL&quot;},{&quot;label&quot;:&quot;IN&quot;,&quot;value&quot;:&quot;IN&quot;},{&quot;label&quot;:&quot;IA&quot;,&quot;value&quot;:&quot;IA&quot;},{&quot;label&quot;:&quot;KS&quot;,&quot;value&quot;:&quot;KS&quot;},{&quot;label&quot;:&quot;KY&quot;,&quot;value&quot;:&quot;KY&quot;},{&quot;label&quot;:&quot;LA&quot;,&quot;value&quot;:&quot;LA&quot;},{&quot;label&quot;:&quot;ME&quot;,&quot;value&quot;:&quot;ME&quot;},{&quot;label&quot;:&quot;MD&quot;,&quot;value&quot;:&quot;MD&quot;},{&quot;label&quot;:&quot;MA&quot;,&quot;value&quot;:&quot;MA&quot;},{&quot;label&quot;:&quot;MI&quot;,&quot;value&quot;:&quot;MI&quot;},{&quot;label&quot;:&quot;MN&quot;,&quot;value&quot;:&quot;MN&quot;},{&quot;label&quot;:&quot;MS&quot;,&quot;value&quot;:&quot;MS&quot;},{&quot;label&quot;:&quot;MO&quot;,&quot;value&quot;:&quot;MO&quot;},{&quot;label&quot;:&quot;MT&quot;,&quot;value&quot;:&quot;MT&quot;},{&quot;label&quot;:&quot;NE&quot;,&quot;value&quot;:&quot;NE&quot;},{&quot;label&quot;:&quot;NV&quot;,&quot;value&quot;:&quot;NV&quot;},{&quot;label&quot;:&quot;NH&quot;,&quot;value&quot;:&quot;NH&quot;},{&quot;label&quot;:&quot;NJ&quot;,&quot;value&quot;:&quot;NJ&quot;},{&quot;label&quot;:&quot;NM&quot;,&quot;value&quot;:&quot;NM&quot;},{&quot;label&quot;:&quot;NY&quot;,&quot;value&quot;:&quot;NY&quot;},{&quot;label&quot;:&quot;NC&quot;,&quot;value&quot;:&quot;NC&quot;},{&quot;label&quot;:&quot;ND&quot;,&quot;value&quot;:&quot;ND&quot;},{&quot;label&quot;:&quot;OH&quot;,&quot;value&quot;:&quot;OH&quot;},{&quot;label&quot;:&quot;OK&quot;,&quot;value&quot;:&quot;OK&quot;},{&quot;label&quot;:&quot;OR&quot;,&quot;value&quot;:&quot;OR&quot;},{&quot;label&quot;:&quot;PA&quot;,&quot;value&quot;:&quot;PA&quot;},{&quot;label&quot;:&quot;RI&quot;,&quot;value&quot;:&quot;RI&quot;},{&quot;label&quot;:&quot;SC&quot;,&quot;value&quot;:&quot;SC&quot;},{&quot;label&quot;:&quot;SD&quot;,&quot;value&quot;:&quot;SD&quot;},{&quot;label&quot;:&quot;TN&quot;,&quot;value&quot;:&quot;TN&quot;},{&quot;label&quot;:&quot;TX&quot;,&quot;value&quot;:&quot;TX&quot;},{&quot;label&quot;:&quot;UT&quot;,&quot;value&quot;:&quot;UT&quot;},{&quot;label&quot;:&quot;VT&quot;,&quot;value&quot;:&quot;VT&quot;},{&quot;label&quot;:&quot;VA&quot;,&quot;value&quot;:&quot;VA&quot;},{&quot;label&quot;:&quot;WA&quot;,&quot;value&quot;:&quot;WA&quot;},{&quot;label&quot;:&quot;WV&quot;,&quot;value&quot;:&quot;WV&quot;},{&quot;label&quot;:&quot;WI&quot;,&quot;value&quot;:&quot;WI&quot;},{&quot;label&quot;:&quot;WY&quot;,&quot;value&quot;:&quot;WY&quot;}],&quot;path&quot;:&quot;patient.address.state&quot;,&quot;placeholder&quot;:&quot;State&quot;},&quot;street1&quot;:{&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Address is required&quot;,&quot;path&quot;:&quot;patient.address.street1&quot;,&quot;placeholder&quot;:&quot;Address 1&quot;},&quot;street2&quot;:{&quot;path&quot;:&quot;patient.address.street2&quot;,&quot;placeholder&quot;:&quot;Address 2 (Apt, Suite, PO Box, etc.)&quot;},&quot;zip&quot;:{&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Zip is required&quot;,&quot;path&quot;:&quot;patient.address.zip&quot;,&quot;placeholder&quot;:&quot;Zip&quot;}},&quot;type&quot;:&quot;address&quot;},{&quot;confirm&quot;:{&quot;invalidMsg&quot;:&quot;Email addresses do not match&quot;,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Email is required&quot;,&quot;label&quot;:&quot;Confirm Email&quot;,&quot;path&quot;:&quot;patient.confirmEmail&quot;,&quot;placeholder&quot;:&quot;username@email.com&quot;},&quot;invalidMsg&quot;:&quot;Email format address@example.com&quot;,&quot;isReadOnly&quot;:false,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Email is required&quot;,&quot;label&quot;:&quot;Email&quot;,&quot;path&quot;:&quot;patient.email&quot;,&quot;placeholder&quot;:&quot;username@email.com&quot;,&quot;type&quot;:&quot;email&quot;},{&quot;addOn&quot;:&quot;consent-add-on&quot;,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Willingness to receive emails is required&quot;,&quot;label&quot;:&quot;Consent to email&quot;,&quot;path&quot;:&quot;patient.email_consent&quot;,&quot;placeholder&quot;:&quot;Does the patient consent to receive emails from us?&quot;,&quot;type&quot;:&quot;checkbox&quot;},{&quot;group&quot;:&quot;Insur Name, Group, Member&quot;,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Insurance name is required&quot;,&quot;label&quot;:&quot;Insurance Carrier Name&quot;,&quot;path&quot;:&quot;appointment.insurance.plan_name&quot;,&quot;placeholder&quot;:&quot;Insurance&quot;,&quot;type&quot;:&quot;simpleSelect&quot;},{&quot;group&quot;:&quot;Referral group&quot;,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Please select whether you were referred&quot;,&quot;label&quot;:&quot;Were you referred by a provider for this appointment?&quot;,&quot;options&quot;:[{&quot;label&quot;:&quot;Yes&quot;,&quot;value&quot;:&quot;Yes&quot;},{&quot;label&quot;:&quot;No&quot;,&quot;value&quot;:&quot;No&quot;}],&quot;path&quot;:&quot;appointment.is_referral&quot;,&quot;row&quot;:true,&quot;type&quot;:&quot;radio&quot;},{&quot;group&quot;:&quot;Referral group&quot;,&quot;label&quot;:&quot;Referring Provider&quot;,&quot;path&quot;:&quot;appointment.referring_provider&quot;,&quot;placeholder&quot;:&quot;Referring Provider&quot;,&quot;type&quot;:&quot;string&quot;},{&quot;displayCharacterCount&quot;:true,&quot;isRequired&quot;:true,&quot;isRequiredMsg&quot;:&quot;Reason for visit is required&quot;,&quot;label&quot;:&quot;Reason for Visit / Visit Type:&quot;,&quot;maxLength&quot;:&quot;140&quot;,&quot;path&quot;:&quot;appointment.notes&quot;,&quot;placeholder&quot;:&quot;Please indicate any visit concerns, or if you would like to receive virtual care. You will be billed if your insurance does not cover video visits.&quot;,&quot;rows&quot;:5,&quot;type&quot;:&quot;textarea&quot;}]},&quot;patient_type&quot;:{&quot;buttons&quot;:[{&quot;button_text&quot;:&quot;Yes&quot;,&quot;patient_type&quot;:&quot;existing&quot;},{&quot;button_text&quot;:&quot;No&quot;,&quot;patient_type&quot;:&quot;new&quot;}]},&quot;show_captcha&quot;:true,&quot;timezone&quot;:&quot;US/Pacific&quot;,&quot;use_appointment_reasons&quot;:true,&quot;use_availability_service&quot;:true,&quot;recaptchaSiteKey&quot;:&quot;6Lc8lOkUAAAAAER417YBcfrvsZQEvtvpHZa2t0hV&quot;},&quot;active_modules&quot;:[&quot;search_match&quot;,&quot;direct_book&quot;],&quot;theme&quot;:{&quot;color_background_badge&quot;:&quot;#087DB9&quot;,&quot;color_button&quot;:&quot;#ED1849&quot;,&quot;color_button_flat_hover&quot;:&quot;#F5F5F5&quot;,&quot;color_button_hover&quot;:&quot;#ED1849&quot;,&quot;color_link&quot;:&quot;#087DB9&quot;,&quot;color_link_hover&quot;:&quot;#087DB9&quot;,&quot;color_providermatch&quot;:&quot;#087DB9&quot;,&quot;sw_color_bg_container&quot;:&quot;#f5f5f5&quot;,&quot;sw_color_button&quot;:&quot;#ed1849&quot;,&quot;sw_color_label&quot;:&quot;#000000&quot;},&quot;search_home&quot;:&quot;/search?sort=networks,relevance&quot;,&quot;emergency_disclaimer&quot;:{&quot;enabled&quot;:false},&quot;emergency_disclaimer_md&quot;:{&quot;enabled&quot;:true,&quot;markdown&quot;:[&quot;[What you need to know about coronavirus (COVID-19)](https://www.prismahealth.org/coronavirus/)&quot;]},&quot;insurance_disclaimer&quot;:{&quot;enabled&quot;:true,&quot;message&quot;:&quot;Note: Please contact your insurance provider to confirm participation&quot;},&quot;social_share&quot;:{},&quot;host&quot;:&quot;https://doctors.prismahealth.org&quot;,&quot;display_availability_in_search&quot;:false,&quot;third_party&quot;:{},&quot;sort_options&quot;:[&quot;best_match&quot;,&quot;distance&quot;,&quot;alphabetical&quot;,&quot;reverse_alphabetical&quot;,&quot;availability&quot;],&quot;index&quot;:&quot;prisma_employed_pmc&quot;,&quot;darkship_KENG_31725&quot;:false,&quot;darkship_KENG_31589&quot;:false},&quot;settings&quot;:{&quot;PMA_URL&quot;:&quot;https://pma.kyruus.com/providers/?mine&quot;},&quot;searchWidgetConfig&quot;:null,&quot;availability&quot;:{&quot;patientRel&quot;:&quot;&quot;,&quot;purpose&quot;:null,&quot;loading&quot;:false,&quot;purposeOptions&quot;:{&quot;new&quot;:[],&quot;established&quot;:[]},&quot;error&quot;:&quot;&quot;,&quot;slotsByProviderId&quot;:{},&quot;slotsStatusByProviderId&quot;:{},&quot;hasFetchingSlotCountsFailed&quot;:false},&quot;slotsCountLoading&quot;:false,&quot;csrfToken&quot;:&quot;&quot;,&quot;locations&quot;:{},&quot;searchMap&quot;:{&quot;locations&quot;:{&quot;state&quot;:&quot;pending&quot;},&quot;providers&quot;:{&quot;state&quot;:&quot;pending&quot;},&quot;providersByLocation&quot;:{}},&quot;customerCode&quot;:&quot;prisma&quot;,&quot;tokens&quot;:{&quot;consumerTrackingToken&quot;:&quot;2346807c-229f-435b-914d-74fa49a67b94&quot;,&quot;searchToken&quot;:&quot;01d495a3-5331-4f8f-8ad5-f37a3f285d66&quot;,&quot;anonymousUserId&quot;:&quot;7a54c835-5040-54e4-ac5d-b840943ff32a&quot;,&quot;userToken&quot;:&quot;86617ec6-7dc0-4e42-a713-c671448e8873&quot;}}">
+    <meta id="csrf-token" content="">
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=Intl%2Cdefault"></script>
+    <script
+        src="https://cdn.kyruus.com/lib/providermatch-consumer/caa453a1eeab1354cf15/runtime-providermatch-consumer.min.js"></script>
+    <script
+        src="https://cdn.kyruus.com/lib/providermatch-consumer/06f0a63c7f1156b35e03/providermatch-consumer.min.js"></script>
+
+    <script
+        src="https://cdn.kyruus.com/lib/providermatch-consumer/f81cd2a3b4f8baeceb7f/home-providermatch-consumer.min.js"></script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi_6IZ0wWcFDBtTHmSN9vR1hTXsgTx3Ok&amp;language=en&amp;region=US&amp;libraries=places"></script>
+    <script src="https://cdn.ravenjs.com/3.15.0/raven.min.js"></script>
+    <script>Raven.config('https://49662da8f7aa4bbab3aaaded1f8ee705@o670.ingest.sentry.io/105372', { release: '4.5.6' }).install();</script>
+
+
+
+
+
+
+    <img src="https://kloggyr-service.kyruus.com/api/log?data=eyJwcm9kdWN0X25hbWUiOiJQcm92aWRlcm1hdGNoIENsaWVudCIsImRlcGxveW1lbnQiOiJwcmQiLCJjdXN0b21lcl9jb2RlIjoicHJpc21hIiwidXNlcl9pZCI6Ijg2NjE3ZWM2LTdkYzAtNGU0Mi1hNzEzLWM2NzE0NDhlODg3MyIsInRyYWNraW5nX3Rva2VuIjoiMjM0NjgwN2MtMjI5Zi00MzViLTkxNGQtNzRmYTQ5YTY3Yjk0IiwidXRtX3BhcmFtIjoiVU5LTk9XTiIsInJlZmVycmVyIjoiVU5LTk9XTiIsImxldmVsIjoiSU5GTyIsIm1lc3NhZ2UiOiJ1c2VyX2FjdGlvbi5wYWdlX3ZpZXcuc2VhcmNoIiwiZXZlbnRfbmFtZSI6InVzZXJfYWN0aW9uLnBhZ2Vfdmlldy5zZWFyY2giLCJldmVudF9kYXRhIjp7InVzZXJfdHlwZSI6IkFub255bW91cyIsImN1c3RvbWVyX2lkIjoicHJpc21hIiwiZGlzdGluY3RfaWQiOiI3YTU0YzgzNS01MDQwLTU0ZTQtYWM1ZC1iODQwOTQzZmYzMmEiLCJzZWFyY2hfdG9rZW4iOiIwMWQ0OTVhMy01MzMxLTRmOGYtOGFkNS1mMzdhM2YyODVkNjYiLCJ1c2VyX3Rva2VuIjoiODY2MTdlYzYtN2RjMC00ZTQyLWE3MTMtYzY3MTQ0OGU4ODczIiwicGFnZSI6InNlYXJjaCJ9LCJldmVudF90aW1lIjoiMjAyMi0wNy0wNlQxMzowOTozMi43ODBaIiwibmFtZSI6InRyYWNreXIiLCJ1c2VyX21ldGFkYXRhIjp7InNjcmVlbl93aWR0aCI6MTkyMCwic2NyZWVuX2hlaWdodCI6MTIwMH0sImtsb2dneXJfanNfdmVyc2lvbiI6IjEuMy4wIiwibm9fY2FjaGVfa2V5IjoxNjMxMjguNzIwMzA5NDkxNzZ9"
+        alt="" aria-hidden="true" style="position: absolute; top: -1000px; left: -1000px; z-index: -999999;">
+
+
+        <!-- LOAD HTML FOR HEADER AND FOOTER -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script> 
+        $( document ).ready(function() {
+            $("#customH").load("./header.html"); 
+            $("#customF").load("./footer.html"); 
+
+            var uniqueNum = new Date().getTime();
+            var cssURL = 'header-footer-styles.css?ver=' + uniqueNum;
+            var cssElement=document.createElement('link')
+            cssElement.setAttribute('rel','stylesheet')
+            cssElement.setAttribute('type','text/css')
+            cssElement.setAttribute('href', cssURL);
+            document.getElementsByTagName("head")[0].appendChild(cssElement);
+        });
+        </script> 
+
+
+</body>
+
+</html>

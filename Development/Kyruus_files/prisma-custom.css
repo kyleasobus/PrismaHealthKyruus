@@ -1,0 +1,61 @@
+
+.kyruus-custom .ky-powered-by-link,
+.kyruus-custom .ky-legal,
+.kyruus-custom .ky-legal a,
+.kyruus-custom .ky-legal a:visited {
+    color: #dde8f4 !important;
+}
+
+.kyruus-custom .kyruus-config-secondary-color.button span,
+.kyruus-custom .kyruus-config-quaternary-color.button span {
+    color: #ffffff;
+}
+
+.kyruus-custom .kyruus-config-secondary-color,
+.kyruus-custom .kyruus-config-secondary-color.active:after {
+    background-color: #ed1849;
+}
+
+.kyruus-custom .kyruus-config-secondary-color.button.btn-link,
+.kyruus-custom .kyruus-config-secondary-color.button.btn-link:hover,
+.kyruus-custom .kyruus-config-secondary-color.button.btn-positive,
+.kyruus-custom .kyruus-config-secondary-color.button.btn-positive:hover,
+.kyruus-custom .kyruus-config-secondary-color.ky-button.btn-link,
+.kyruus-custom .kyruus-config-secondary-color.ky-button.btn-link:hover,
+.kyruus-custom .kyruus-config-secondary-color.ky-button.ky-btn-positive,
+.kyruus-custom .kyruus-config-secondary-color.ky-button.ky-btn-positive:hover {
+    background-color: #ed1849;
+    border-color: #ed1849;
+    background-image: none;
+    text-shadow: none;
+}
+
+.kyruus-custom .kyruus-config-tertiary-color,
+.kyruus-custom .label.kyruus-config-tertiary-color {
+    background-color: #087DB9;
+    color: #ffffff;
+}
+
+.kyruus-custom .kyruus-config-quarternary-color.button.btn-link,
+.kyruus-custom .kyruus-config-quarternary-color.button.btn-link:hover,
+.kyruus-custom .kyruus-config-quarternary-color.button.btn-positive,
+.kyruus-custom .kyruus-config-quarternary-color.button.btn-positive:hover
+.kyruus-custom .kyruus-config-quarternary-color.ky-button.btn-link,
+.kyruus-custom .kyruus-config-quarternary-color.ky-button.btn-link:hover,
+.kyruus-custom .kyruus-config-quarternary-color.ky-button.ky-btn-positive,
+.kyruus-custom .kyruus-config-quarternary-color.ky-button.ky-btn-positive:hover {
+    background-color: #ed1849;
+    border-color: #ed1849;
+    background-image: none;
+    text-shadow: none;
+}
+
+.kyruus-custom .kyruus-config-quaternary-color.button.btn-link,
+.kyruus-custom .kyruus-config-quaternary-color.button.btn-positive,
+.kyruus-custom .kyruus-config-quaternary-color.ky-button.btn-link,
+.kyruus-custom .kyruus-config-quaternary-color.ky-button.ky-btn-positive {
+    background-color: #ed1849;
+    border-color: #ed1849;
+    background-image: none;
+    text-shadow: none;
+}

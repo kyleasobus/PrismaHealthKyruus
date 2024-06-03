@@ -368,6 +368,7 @@ body .kcw {
 	position: relative;
 	color: #333;
 	padding: 14px 18px 14px;
+	display: block;
 }
 
 /* --- FOOTER --- */
